@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#root {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Inter", sans-serif;
+
+}
+
+.left{
+  width: 50%;
+  float: left;
+}
+.right{
+  float: left;
+  width: 50%;
+}

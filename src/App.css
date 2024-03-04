@@ -1,0 +1,265 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 5em;
+  padding: 1.5em;
+  /* will-change: filter;
+  transition: filter 300ms; */
+  /* padding-bottom: 20px; */
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.left{
+  float: left;
+  padding: 12px;
+  background-color: #fff;
+  
+}
+header  {
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 8%);
+  position:relative;
+max-height: 150px;
+  border-radius: 22px;
+  
+}
+/* nav */
+nav ul {
+  display: flex;
+  text-decoration: none;
+  padding-right: 12px;
+}
+nav a {
+  text-transform: capitalize;
+  margin-right: 30px;
+  color: #000;
+}
+header.active {
+  position: sticky;
+  top: 0;
+  left: 0;
+  /* width: 100%; */
+  box-shadow: 0 0 4px 0 rgb(115 115 115 / 20%);
+  /* z-index: 9999; */
+  background: #fff;
+}
+.button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: inherit;
+  background-color: #5820c0;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+.btn {
+  border-radius: 8px;
+  margin-right: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: inherit;
+  background-color: #b8acce;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+Link{
+  text-decoration: none;
+  text-decoration-line: none;
+}
+
+/* nav */
+nav ul {
+  display: flex;
+  padding-left: 32px;
+  padding-right: 12px;
+  text-decoration: none;
+}
+nav li {
+  display: flex;
+  padding-left: 12px;
+  padding-right: 12px;
+  text-decoration: none;
+}
+nav a {
+  text-transform: capitalize;
+  margin-right: 30px;
+  color: #000;
+  text-decoration: none;
+}
+/* User */
+/* .profile {
+  margin-left: 90px;
+  margin-right: 2px;
+  cursor: pointer;
+} */
+
+
+.profile button {
+  font-size: 17px;
+  font-weight: 500;
+}
+.profile img {
+  width: 20px;
+  height: 20px;
+  border-radius: 40%;
+  object-fit: cover;
+
+}
+.openProfile {
+  color: #000;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 8%);
+  position: absolute;
+  top: 80px;
+  right: 10px;
+
+  /* width: 250px; */
+  background: #fff;
+}
+.openProfile .box {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  /* margin-top: 10px;
+  padding: 5px; */
+  /* transition: 0.5s; */
+}
+/* .openProfile .icon {
+  font-size: 20px;
+  margin-right: 20px;
+} */
+.openProfile h4 {
+  font-size: 15px;
+  font-weight: 700;
+}
+.openProfile button:hover {
+  background: rgba(147, 75, 255, 0.075);
+}
+/* header.active {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 0 4px 0 rgb(115 115 115 / 20%);
+  z-index: 999;
+  background: #fff;
+} */
+
+@media only screen and (max-width: 600px) {
+  .profile{
+    visibility: visible;
+    padding-top: 20px;
+    }  
+ .navigation{
+  visibility: visible;
+ }
+.logo{
+padding: 0;
+margin-bottom: 10px;
+width: 64px;
+height: 44px;
+padding-top: 0px;
+
+
+}
+
+header  {
+  background: #c05c5c;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 8%);
+  position: relative;
+  border-radius: 22px;
+  max-height: 150px;
+}
+
+  nav{
+    visibility: hidden;
+    
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .profile{
+    visibility: hidden;
+  }
+
+nav .navigation{
+  visibility: visible;
+}
+
+
+}
+.container {
+  max-width: 95%;
+  margin: auto;
+}
+footer {
+  padding: 10px;
+}
+footer .icon {
+  font-size: 20px;
+  margin-left: 10px;
+}
+.box{
+  margin: 2px;
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+  background: #e0dbdb;
+  display: flex;
+  padding: 10px;
+
+}
+.boxItems{
+  margin: 2px;
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+  background: #e0dbdb;
+  display: flex;
+  padding: 10px;
+
+}
+ 
+ .user .image .img img{
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  
+}
+.user .image{
+  background: #fff;
+}
