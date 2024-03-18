@@ -33,7 +33,7 @@
 }
 
 .card {
-  padding: 2em;
+  padding: 1em;
 }
 
 .read-the-docs {
@@ -42,7 +42,8 @@
 .left{
   float: left;
   padding: 12px;
-  background-color: #fff;
+  
+  /* background-color: #fff; */
   
 }
 header  {
@@ -121,8 +122,8 @@ nav a {
   color: #000;
   text-decoration: none;
 }
-/* User */
-/* .profile {
+
+ /* .profile {
   margin-left: 90px;
   margin-right: 2px;
   cursor: pointer;
@@ -144,49 +145,42 @@ nav a {
   color: #000;
   box-shadow: 0 2px 4px rgb(0 0 0 / 8%);
   position: absolute;
-  top: 80px;
-  right: 10px;
-
-  /* width: 250px; */
   background: #fff;
 }
 .openProfile .box {
   display: flex;
   align-items: center;
   width: 90%;
-  /* margin-top: 10px;
-  padding: 5px; */
-  /* transition: 0.5s; */
+  margin-top: 10px;
+  padding: 5px; 
+   transition: 0.5s;
 }
 /* .openProfile .icon {
   font-size: 20px;
   margin-right: 20px;
 } */
-.openProfile h4 {
+/* .openProfile h4 {
   font-size: 15px;
   font-weight: 700;
-}
+} */
 .openProfile button:hover {
   background: rgba(147, 75, 255, 0.075);
 }
-/* header.active {
-  position: sticky;
-  top: 0;
-  left: 0;
-  width: 100%;
-  box-shadow: 0 0 4px 0 rgb(115 115 115 / 20%);
-  z-index: 999;
-  background: #fff;
-} */
+
 
 @media only screen and (max-width: 600px) {
   .profile{
     visibility: visible;
     padding-top: 20px;
     }  
+    .card {
+      padding: 0em;
+    }
+
  .navigation{
   visibility: visible;
  }
+ 
 .logo{
 padding: 0;
 margin-bottom: 10px;
@@ -198,7 +192,7 @@ padding-top: 0px;
 }
 
 header  {
-  background: #c05c5c;
+  background: #faf9f9;
   box-shadow: 0 2px 4px rgb(0 0 0 / 8%);
   position: relative;
   border-radius: 22px;
@@ -215,12 +209,24 @@ header  {
   .profile{
     visibility: hidden;
   }
+.sideNewImage{
+  width: 100%;
+}
 
 nav .navigation{
   visibility: visible;
 }
-
-
+.center{
+  text-align: center;
+  color: #264d94;
+  align-items: center;
+}
+.canter{
+  text-align: center;
+  color: #0648c2;
+  align-items: center;
+  padding-right: 100px;
+}
 }
 .container {
   max-width: 95%;
@@ -237,7 +243,6 @@ footer .icon {
   margin: 2px;
   border-radius: 10px;
   width: 100%;
-  position: relative;
   background: #e0dbdb;
   display: flex;
   padding: 10px;
@@ -262,4 +267,9 @@ footer .icon {
 }
 .user .image{
   background: #fff;
+}
+.box .center{
+  text-align: center;
+  color: #264d94;
+  align-items: center;
 }

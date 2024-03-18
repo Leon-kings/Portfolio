@@ -1,32 +1,51 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { BsArrowBarDown,  BsInputCursorText, BsUiChecks, BsSave, BsQuote, BsArrowBarUp } from 'react-icons/bs'
 import g from "../../assets/images/g.jpg"
 import { user } from '../../assets/data/user/data'
 import "../../assets/css/specific.css"
+// images
 import Screenshot5 from "../../assets/images/Screenshot5.png"
+import Screenshot1 from "../../assets/images/Screenshot1.png"
+import Screenshot2 from "../../assets/images/Screenshot2.png"
 import Screenshot from "../../assets/images/Screenshot.png"
-
+import Formal_letter from "../../assets/images/Formal_letter.png"
+import Screenshott from "../../assets/images/Screenshott.png"
+import ScreenshotN from "../../assets/images/ScreenshotN.png"
+import screenshot from "../../assets/images/screenshot.jpg"
+import OfficialBusinessLetter from "../../assets/images/OfficialBusinessLetter.jpg"
+import screenshot3 from "../../assets/images/screenshot3.jpg"
+import screenshot2 from "../../assets/images/screenshot2.jpg"
 // posts
-import Official from "../side-parts/letters/legal/Official"
+
 import { Link } from 'react-router-dom'
 function Home() {
+    const Quest = true
+    const [Open, setOpen] = useState(false)
+    const [Ope, setOpe] = useState(false)
+    const close = () => {
+      setOpen(false)
+    }
   return (
    <>
    <div className="app">
     <div className="container">
+    <h3>Everything to spice up your documents</h3>
+          <p><h4>
+            Ramp up your document design with our huge range of assets. Tap into over 40 charts, graphs, maps, tables, data widgets and icons to transform stats and figures into snackable visuals in your documents.
+          </h4></p>
         <div className="box">
            <div className="left">
             <h1 className='title font-bold '>Unleash your full potential</h1>
             <p>Take your Career to New Height with our AI -Boosted</p>
             <p>All-in-One Platform . Start for Free and Ejevate with</p>
             <p>Premium Option</p>
-            <Link to={'/Startfree'}>
+            <Link to={'/free'}>
             <button className="button font-bold"><BsArrowBarDown className='icon' />Get Started - It's Free</button>
             </Link>
            </div>
            {/* second part */}
            <div className="left">
-            <img src={g} alt="side-bar-image" style={{width:"49%"}} className='side' />
+            <img src={Screenshott} alt="side-bar-image"   className='sideImage' />
            </div>
         </div>
         {/* 1 end */}
@@ -105,7 +124,7 @@ function Home() {
 <div className="container">
     <div className="box">
         <div className="left">
-            <img src={g} alt="" className='sideImage' />
+            <img src={screenshot2} alt="" className='sideImage' />
         </div>
 
         <div className="left">
@@ -198,7 +217,7 @@ function Home() {
                 <label htmlFor="docs">Create your Documents right now</label>
                 </div>
             </form>
-            <button className="button">Create Own now</button>
+           <Link to={'/CreateResume'}> <button className="button">Create Own now</button></Link>
         </div>
     </div>
 </div>
@@ -209,16 +228,17 @@ function Home() {
         <h3 className="text-center">The versatile online Documents software that will Streamline the creation of your <b>proposals , report , white papers , ebooks</b> and types of Document</h3>
     </div>
     <div className="image">
-    <div className="box">
+  
         
-            <div className="left"><img src={Screenshot} alt="side" id='hidd-side-image' className='img-side' /></div>
-            <div className="left"><img src={Screenshot} alt="side" id='hidd-side-image'  className='img-side' /></div>
-            <div className="left"><img src={Screenshot} alt="side" id='hidd-side-image' className='img-side' /></div>
-            <div className="left"><img src={Screenshot} alt="side" id='hidd-side-image'   className='img-side' /></div>
-            <div className="left"><img src={Screenshot} alt="side" id='hidd-side-image' className='img-side' /></div>
+            <div className="left"><img src={Screenshot1} alt="side" id='hidd-side-image' className='sideImage' /></div>
+            <div className="left"><img src={ScreenshotN} alt="side" id='hidd-side-image'  className='sideImage' /></div>
+            <div className="left"><img src={Screenshot2} alt="side" id='hidd-side-image' className='sideImage' /></div>
+            <div className="left"><img src={Screenshot5} alt="side" id='hidd-side-image'   className='sideImage' /></div>
+            <div className="left"><img src={Screenshot} alt="side" id='hidd-side-image' className='sideImage' /></div>
+            
         </div>
 
-    </div>
+
 </div>
 
 {/* Services we provide */}
@@ -253,8 +273,8 @@ function Home() {
     {/* buttons */}
 <div className="container">
     <div className="box font-bold text-center">
-      <button className="button">Create Your Own Docs</button>
-      <button className="button" id='side-button'>View Our Tampletes</button>
+    <Link to={'/free'}>  <button className="button">Create Your Own Docs</button></Link>
+     <Link to={'/tampletes'}> <button className="button" id='side-button'>View Our Tampletes</button></Link>
         
     </div>
 </div>
@@ -280,36 +300,303 @@ function Home() {
         </div>
     </div>
 {/* new */}
-
+{/* <div className="container">
 <div className="row">
   <div className="column">
-    <h2>Jobs Official Letters</h2>
-    <Official />
+<img src={ScreenshotN}  alt="" />
+    
   </div>
-  
-  <div className="column">
-    <h2>Students Application Letters</h2>
-    <Official />
-    {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p> */}
-  </div>
-  
-  <div className="column">
-    <h2>Weddinng Envitation</h2>
-    <Official />
-    {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p> */}
-  </div>
-  <div className="column">
-    <h2>Lunch / Dinner Envitation</h2>
-    <Official />
-    {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p> */}
-  </div>
-  <div className="column">
-    <h2>Resumes</h2>
-    <Official />
-    {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p> */}
-  </div>
-
 </div>
+<div className="row">
+  <div className="column">
+<img src={Screenshot1} alt="" />
+    
+  </div>
+</div>
+</div> */}
+<div className="container">
+    <div className="box">
+        <div className="left">
+        <img src={ScreenshotN} className='sideNewImage'  alt="" /> 
+        </div>
+    </div>
+</div>
+{/* categoty */}
+<div className="container">
+    <p className='font-bold'><i><u><b>Resume</b> </u> </i> </p>
+    <p>Our easy-to-use, fully customizable document templates give you a quick and easy starting point to create your documents. Our hundreds of professionally designed document templates contain carefully researched and crafted content to make it easier for you to create your next document.</p>
+    <div className="box">
+        <div className="left">
+            
+          <button className="button">Create Yours Now</button>
+          <img src={Screenshot1} className='sideNewImage'  alt="" />
+          
+           </div>
+        <div className="left" >
+        <img src={Screenshot2} className='sideNewImage'  alt="" /> 
+        <button className="button">Create Your Resume</button>
+        <button className="button">View All Tampletes</button>
+        </div>
+    </div>
+</div>
+
+{/* letters */}
+<div className="container">
+    <p className='font-bold'><i><u><b>Letters</b> </u> </i> </p>
+    <p>Our easy-to-use, fully customizable document templates give you a quick and easy starting point to create your documents. Our hundreds of professionally designed document templates contain carefully researched and crafted content to make it easier for you to create your next document.</p>
+    <div className="box">
+        <div className="left">
+            
+          <button className="button">Create Yours Now</button>
+          <img src={Formal_letter} className='sideNewImage'  alt="" />
+          
+           </div>
+        <div className="left" >
+        <img src={OfficialBusinessLetter} className='sideNewImage'  alt="" /> 
+        <button className="button">Create Your Resume</button>
+        <button className="button">View All Tampletes</button>
+        </div>
+    </div>
+</div>
+
+{/* envitation */}
+<div className="container">
+    <p className='font-bold'><i><u><b>Envitations</b> </u> </i> </p>
+    <p>Our easy-to-use, fully customizable document templates give you a quick and easy starting point to create your documents. Our hundreds of professionally designed document templates contain carefully researched and crafted content to make it easier for you to create your next document.</p>
+    <div className="box">
+        <div className="left">
+            
+          <button className="button">Create Yours Now</button>
+          <img src={screenshot} className='sideNewImage'  alt="" />
+          
+           </div>
+        <div className="left" >
+        <img src={screenshot3} className='sideNewImage'  alt="" /> 
+        <button className="button">Create Your Resume</button>
+        <button className="button">View All Tampletes</button>
+        </div>
+    </div>
+</div>
+{/* new part */}
+<div className="container">
+    <div className="box">
+        <div className="left">
+            <h2>Transform Your Job Search Into a Career Triumph</h2>
+            <br />
+            <p>Where You're Not Seen.</p>
+            <h4>You're <p style={{color:"darkred"}}>Remembered</p></h4>
+        </div>
+        {/* side */}
+        <div className="left">
+            <h3 className="font-bold">Define Your Career Path</h3>
+            <p>Why Settle for Average When You Can Have ExtraOrdinary with LD CV?
+            Don't Just Seek for a Job. <p> Command your Career feed up with Faceless application and Unforgettable Resumes?</p>
+             Unveil Your Full Potential With LD CV ,Your Secret Weapon for Owning Job Market .We are not just CV Builder ,We are also Career Catalyst </p>
+             <br />
+            
+             <h3 className="font-bold">Level Up With Real-Time Industry Insight </h3>
+             <p>Our Obsession With Innovation Ensure You're Never Playing Catch-Up.Get real-time Insight on industry</p> 
+             <p> demands And Employee Desires , equipping you to dominate Your Job Search Journey </p>
+        </div>
+    </div>
+</div>
+  {/* Question page */}
+  <div className="container">
+  <h3 className='font-bold text-center'>Frequently asked Question</h3>
+    <div className="box">
+   <form className='form'>
+   
+        {Quest ? (
+          <div>
+            <div className="left">
+            <h4>What does LD Offer?</h4>
+            <label className='Qtn' onClick={() => setOpen(!Open)}>
+                &nbsp;  &nbsp;  &nbsp;  &nbsp;
+         <label className='font-bold'><b> Ans</b></label>
+            </label>
+            </div>
+            <div className="left">
+            {Open && (
+              <p className='open ' id='blanck' >
+            <ol>
+   
+  <li>
+   <label htmlFor="docs">Production Documents</label>
+   <input type="checkbox" name="prodocs" id="docs" /></li>
+   <li>
+   <label htmlFor="docs">Agricultural Documents</label>
+   <input type="checkbox" name="prodocs" id="docs" /></li>
+  <li>
+   <label htmlFor="docs">Proffessional Documents</label>
+   <input type="checkbox" name="prodocs" id="docs" /></li>
+   </ol>
+
+       
+                
+   
+              </p>
+            )}
+          </div></div>
+        ) : (
+          <button type="button">Start for free</button>
+        )}
+    
+
+       
+    {Quest ? (
+          <div>
+            <div className="left">
+            <h4>Can I use CV for Free?</h4>
+            <label className='Qtn' onClick={() => setOpen(!Ope)}>
+                &nbsp;  &nbsp;  &nbsp;  &nbsp;
+         <label className='font-bold'><b> Ans</b></label>
+            </label>
+            </div>
+            <div className="left">
+            {Open && (
+              <p className='open ' id='blanck' >
+            <ol>
+   
+  <li>
+   <label htmlFor="docs">Yes</label>
+   <input type="checkbox" name="prodocs" id="docs" /></li>
+   <li>
+   <label htmlFor="docs">No</label>
+   <input type="checkbox" name="prodocs" id="docs" /></li>
+ 
+   </ol>
+
+       
+                
+   
+              </p>
+            )}
+          </div></div>
+        ) : (
+          <button type="button">Start for free</button>
+        )}
+
+
+{Quest ? (
+          <div>
+            <div className="left">
+            <h4>Can I use CV for Free?</h4>
+            <label className='Qtn' onClick={() => setOpen(!Open)}>
+                &nbsp;  &nbsp;  &nbsp;  &nbsp;
+         <label className='font-bold'><b> Ans</b></label>
+            </label>
+            </div>
+            <div className="left">
+            {Open && (
+              <p className='open ' id='blanck' >
+            <ol>
+   
+  <li>
+   <label htmlFor="docs">Yes</label>
+   <input type="checkbox" name="prodocs" id="docs" /></li>
+   <li>
+   <label htmlFor="docs">No</label>
+   <input type="checkbox" name="prodocs" id="docs" /></li>
+ 
+   </ol>
+
+       
+                
+   
+              </p>
+            )}
+          </div></div>
+        ) : (
+          <button type="button">Start for free</button>
+        )}
+
+
+{Quest ? (
+          <div>
+            <div className="left">
+            <h4>Can I use CV for Free?</h4>
+            <label className='Qtn' onClick={() => setOpen(!Open)}>
+                &nbsp;  &nbsp;  &nbsp;  &nbsp;
+         <label className='font-bold'><b> Ans</b></label>
+            </label>
+            </div>
+            <div className="left">
+            {Open && (
+              <p className='open ' id='blanck' >
+            <ol>
+   
+  <li>
+   <label htmlFor="docs">Yes</label>
+   <input type="checkbox" name="prodocs" id="docs" /></li>
+   <li>
+   <label htmlFor="docs">No</label>
+   <input type="checkbox" name="prodocs" id="docs" /></li>
+ 
+   </ol>
+
+       
+                
+   
+              </p>
+            )}
+          </div></div>
+        ) : (
+          <button type="button">Start for free</button>
+        )}
+
+
+   </form>
+   {/* <form action="" method="get">
+    <div className="left"><ul typeof='1'><li><label htmlFor="docs"> What does LD offers?</label></li></ul>  </div>
+   <div className="left">
+    <ol>
+   
+    <br /><li>
+    <label htmlFor="docs">Production Documents</label>
+    <input type="checkbox" name="prodocs" id="docs" /></li>
+    <br /><li>
+    <label htmlFor="docs">Agricultural Documents</label>
+    <input type="checkbox" name="prodocs" id="docs" /></li>
+    <br /><li>
+    <label htmlFor="docs">Proffessional Documents</label>
+    <input type="checkbox" name="prodocs" id="docs" /></li>
+    </ol>
+   </div>
+    
+   <div className="left"><ul><li><label htmlFor="free"> Can I use CV for Free?</label></li></ul>  </div>
+   <div className="left">
+    <ol>
+   
+    <br /><li>
+    <input type="checkbox" name="prodocs" id="docs" /> &nbsp;
+    <label htmlFor="docs">Yes</label>
+    </li>
+    <br /><li>
+    <input type="checkbox" name="prodocs" id="docs" /> &nbsp;
+    <label htmlFor="docs">Not</label>
+    </li>
+
+    </ol>
+   </div>
+
+  </form> */}
+    </div>
+  </div>
+  
+    {/* Last events */}
+    <div className="container">
+        <h2 className="font-bold text-center">Start Building Your Future</h2>
+        <div className="box">
+        <h4>Unveil Your Full Potential With Friendly Tampletes ,Non Scammy Resumes and Career Tools . Start Building 
+            Your Documents for Free And Soon Premium enhance will Start Used.
+             </h4>
+            
+    </div>
+    <button className="button"><BsArrowBarUp /> Start Now</button>
+    </div>
+ 
+
+
 
 
 
